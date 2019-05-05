@@ -21,13 +21,21 @@ import java.security.InvalidKeyException;
 import java.util.*;
 
 
+object MessageToBlob {
+  
+    def main(args: Array[String]): Unit = {
+
+    }
+  
+  }
+
+
 /**
  * The personnel ingestion application
  */
 public class MessageToBlob {
 
-    @Test
-    public void basicTest() throws MalformedURLException, InvalidKeyException {
+    public static void main(String[] args) throws MalformedURLException, InvalidKeyException {
         String kafkaBrokers = System.getenv("KAFKA_BROKERS");
         String kafkaGroupId = System.getenv("KAFKA_GROUP_ID");
         String kafkaTopic = System.getenv("KAFKA_TOPIC");
